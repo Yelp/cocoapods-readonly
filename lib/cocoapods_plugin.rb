@@ -1,1 +1,1 @@
-require 'cocoapods-readonly/command.rb'
+require 'cocoapods-readonly/toggle_readonly.rb'
