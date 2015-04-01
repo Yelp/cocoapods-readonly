@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = CocoapodsReadonly::VERSION
   spec.authors       = ["Mason Glidden"]
   spec.email         = ["mglidden@yelp.com"]
-  spec.description   = %q{A short description of cocoapods-readonly.}
-  spec.summary       = %q{A longer description of cocoapods-readonly.}
-  spec.homepage      = "https://github.com/EXAMPLE/cocoapods-readonly"
+  spec.description   = %q{Makes CocoaPods source files read-only, so you can't accidently modify them.}
+  spec.summary       = %q{Developers switching from submodules are used to modifying library source files from within Xcode. This locks those files as needed so Xcode warns you when attempting to edit.}
+  spec.homepage      = "https://github.com/Yelp/cocoapods-readonly"
   spec.license       = "Apache"
 
   spec.files         = `git ls-files`.split($/)
