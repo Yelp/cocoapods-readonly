@@ -5,7 +5,7 @@ module Pod
       for pod in installer.pods
         # if the pod is actually in Pods/, and not a :path linked pod
         if pod.root.parent == installer.sandbox_root
-          for file in pod.source_files
+          for file in Dir.glob(pod.root + '**/*').reject { |f| File.directory?(f) }
             File.chmod(permissions, file)
           end
         end
